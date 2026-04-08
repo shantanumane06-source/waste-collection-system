@@ -26,7 +26,7 @@ public class BookingService {
 	public List<Booking>getPendingBookings(){
 		return bookingRepo.findByStatus(Booking.Status.PENDING);
 	}
-	public Booking updateStatud(Long id, Booking.Status status) {
+	public Booking updateStatus(Long id, Booking.Status status) {
 		Booking booking=bookingRepo.findById(id).orElseThrow();
 		return bookingRepo.save(booking);
 	}

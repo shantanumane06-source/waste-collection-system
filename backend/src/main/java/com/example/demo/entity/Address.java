@@ -34,5 +34,5 @@ public class Address {
 	
 	@ManyToOne
 	@JoinColumn(name="user_id")
-	private UserEntity User;
+	private UserEntity user;
 }

@@ -27,6 +27,7 @@ public class CollectorEntity {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
+	private String name;
 	private String mobile;
 	private String vehicleNumber;
 	
